@@ -63,7 +63,7 @@ quit;
 
 data result;
 set result;
-if missing_ratio=. then missing_ratio=1;
+if missing_ratio=. then missing_ratio=0;
 run;
 proc sort data=result;
 by VARNUM;
